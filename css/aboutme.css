@@ -1,0 +1,261 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* Logo */
+
+h1 {
+
+  float:left;
+  padding: 3%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color:  #000000;
+  cursor: pointer;
+}
+
+
+/* Hamburger Menu */
+.menu { float:right;
+  padding: 3%;
+  cursor: pointer;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/* Hamburger Menu End*/
+/*******************************************/
+
+/* Page Content*/
+
+.photoOfMe img{
+  float: left;
+  width: 416px;
+  clear: both;
+  height: 855px;
+  object-fit: contain;
+
+}
+
+/* section with credentials go here (age, design experience, specialty, etc...*/
+
+/* Hi, I'm Liz*/
+.headline{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  line-height: 0.94;
+  color: #000000;
+  margin-left: 50px;
+  
+}
+/* line separation*/
+.style1 {
+  clear: both;
+  width: 50px;
+  height: 5px;
+  background-color: #000000;
+  margin: 80px 0 55px 75px ;
+}
+
+
+ 
+
+/* credentials info start*/
+.credentials {
+  width: 855;
+  height: 855px;
+  float: left;
+}
+
+.credentials ul {
+    
+    margin-left: 30px;
+    clear:both;
+  }
+
+.credentialsInfo li {
+    margin-left:45px ;
+    float: left;
+    width: 200px;
+   
+  } 
+
+.credentialsInfo h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+   }
+
+.credentialsInfo p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 2em;
+    font-weight: 300
+   }  
+
+/* credentials info end*/  
+
+/* About Me Paragraph start*/  
+.aboutMePara{
+  width: 624px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  margin-left: 72px;
+
+}
+
+/* TOOLBOX start*/ 
+
+.toolboxContainer h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-left: 70px;
+   }
+
+.toolboxContainer li img{
+  height: 30px;
+}
+
+
+.toolboxContainer li{
+  float: left;
+}
+
+.toolboxContainer p{
+  width: 67px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.toolboxContainer ul{
+ margin-left:45px ;
+ 
+
+}
+
+   /* TOOLBOX End*/ 
+
+/* Page Content End*/
+/******************************************
+/**
+ * Footer Styles
+ */
+
+.footer{ 
+  clear: both; 
+  width:100%; 
+  background: black;
+  height: 300px;
+   /* footer container*/
+
+}
+
+.section1 {
+  display: inline-block;
+  padding: 35px 3%;
+  float: left;
+
+}
+.section2 {
+  display: inline-block;
+  float: both;
+  padding: 35px 3%;
+
+}
+
+footer p{
+  text-align: left;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+  .social {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 3px;
+  text-align: center;
+  padding:5px 2%;
+
+   /* footer icons*/
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
