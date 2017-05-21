@@ -43,20 +43,24 @@ font-family: 'Roboto', sans-serif;
 /* BASE STYLES
 /*******************************************/
 
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
 /* Logo */
 
 h1 {
-	float:left;
-	padding: 3%;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 22px;
-	color: #333;
+  float:left;
+  padding: 3%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #333;
   cursor: pointer;
 }
 
 /* Hamburger Menu */
 .menu { float:right;
-	padding: 3%;
+  padding: 3%;
   cursor: pointer;
 }
 
@@ -91,42 +95,12 @@ h1 {
 }
 /* Hamburger Menu End*/
 
-
-
-/* project grid start*/
-#projectGrid {
-  float: left;
-  width: 100%;
-}
+/*/////////////////////////////////////////////////
+content start*/
 
 
 
-
-
-/* each individual project square*/
-.square {
-  border: 0px;
-  padding: 0 auto;
-  float:left;
-  box-sizing:border-box;
-  width: 33.33vw;
-  height: 33.33vw;
-
-}
-
-
-.square a {
-    display: none;
-   /* hides titles of projects*/
- }
-
-
-
-.square img {
-    width: 33.33vw;
-    height: 33.33vw;
-  /* keeps images inside square*/
-}
+/*content end//////////////////////////////////////*/
 
 /**
  * Footer Styles
@@ -206,7 +180,6 @@ footer h5{
     padding: ;
     float:none;
  }
-
 }
 
 /*Media Query -resize to tablet*/
@@ -230,14 +203,6 @@ footer h5{
 
 /*Media Query -resize to mobile*/
 @media only screen and (max-width:500px){
-   .square {
-    width: 100vw;
-    height: 100vw;
-  }
-    .square img{
-    width: 100vw;
-    height: 100vw;
-  }
 
   .arrow {
     display:none;
@@ -253,15 +218,6 @@ h1 {
   padding: 5% 0 12% 3%;
   
 }
-  .square {
-    width: 100vw;
-    height: 100vw;
-  }
-
-  .square img{
-    width: 100vw;
-    height: 100vw;
-  }
 
   .arrow {
     display:none;
@@ -295,3 +251,4 @@ h1 {
   }
 
 }
+

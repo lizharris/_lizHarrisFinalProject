@@ -122,7 +122,7 @@ h1 {
   width: 50px;
   height: 5px;
   background-color: #000000;
-  margin: 80px 0 55px 75px ;
+  margin: 70px 0 50px 75px ;
 }
 
 
@@ -130,7 +130,6 @@ h1 {
 
 /* credentials info start*/
 .credentials {
-  width: 855;
   height: 855px;
   float: left;
 }
@@ -179,15 +178,24 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     margin-left: 70px;
+    padding-bottom: 20px;
    }
+
+.toolboxContainer ul{
+    margin-left:70px ;
+    margin-bottom: 100px;
+ 
+}
 
 .toolboxContainer li img{
   height: 30px;
+  margin: 10px 0 5px 0;
 }
 
 
 .toolboxContainer li{
   float: left;
+  margin: 0 30px 0 0;
 }
 
 .toolboxContainer p{
@@ -199,13 +207,32 @@ h1 {
   color: #000000;
 }
 
-.toolboxContainer ul{
- margin-left:45px ;
- 
+   /* TOOLBOX End*/ 
+
+/* Contact Email begin*/ 
+
+.contactInfo{
+   margin-left: 70px;
+   margin-top:200px;
+  clear:both;
 
 }
+.contactInfo h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
 
-   /* TOOLBOX End*/ 
+.contactInfo a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 2em;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000000;
+
+
+}
 
 /* Page Content End*/
 /******************************************
@@ -235,12 +262,25 @@ h1 {
 
 }
 
-footer p{
+footer h4{
+  text-align: left;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+footer h5{
   text-align: left;
   color: white;
   font-family: 'Roboto', sans-serif;
   padding-left: 10px;
+  padding-top:15px ;
   padding-bottom: 20px;
+  font-weight: 300;
+  width: 197px;
+  height: 48px;
+  line-height: 1.33;
 }
 
   .social {
@@ -250,6 +290,14 @@ footer p{
   margin: 0 3px;
   text-align: center;
   padding:5px 2%;
+}
+
+  .arrow {
+    height: 44px;
+    width: 44px;
+    float: right;
+    padding: 30px 8%;
+  }
 
    /* footer icons*/
 }
@@ -259,3 +307,82 @@ footer p{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+/*Media Query -resize footer for copyright floats*/
+@media only screen and (max-width:782px){
+  .section2{
+    margin:-30px 300px 0 0;
+    padding: ;
+    float:none;
+ }
+}
+
+/*Media Query -resize to tablet*/
+@media only screen and (max-width:768px) {
+  .square {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .square img{
+    width: 50vw;
+    height: 50vw;
+  }
+    .section2{
+    margin:-30px 300px 0 0;
+    padding: ;
+    float:none;
+ }
+
+}
+
+/*Media Query -resize to mobile*/
+@media only screen and (max-width:500px){
+
+  .arrow {
+    display:none;
+  }
+}
+/*Media Query -resize to mobile*/
+@media only screen and (max-width:414px) {
+
+/*put menu items up here -*/
+
+h1 {
+
+  padding: 5% 0 12% 3%;
+  
+}
+
+  .arrow {
+    display:none;
+  }
+
+  footer section h4 {
+    text-align: center;
+
+  }
+  footer section h5{
+     text-align: center;
+     width: 197px;
+     height: 48px;
+     line-height: 1.33;
+  }
+
+  .footer{ 
+  height: 300px;
+}
+  .section2{
+    display: inline-block;
+    padding: 0 3%;
+    margin:0 22%;
+ }
+
+}
+  .social {
+  margin: 0 0px;
+  text-align: center;
+  padding:5 5.6%;
+  }
+
+}
+
