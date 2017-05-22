@@ -102,8 +102,8 @@ h1 {
   clear: both;
   height: 855px;
   object-fit: contain;
-
 }
+
 
 /* section with credentials go here (age, design experience, specialty, etc...*/
 
@@ -308,6 +308,14 @@ footer h5{
 /* ADDITIONAL STYLES
 /*******************************************/
 /*Media Query -resize footer for copyright floats*/
+@media only screen and (max-width:1880px){
+  
+.photoOfMe img{
+    display: none;
+  }
+
+}
+
 @media only screen and (max-width:782px){
   .section2{
     margin:-30px 300px 0 0;
