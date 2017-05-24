@@ -60,6 +60,14 @@ h1 {
   cursor: pointer;
 }
 
+#menu-btn {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
 .container {
     display: inline-block;
     cursor: pointer;
@@ -73,6 +81,11 @@ h1 {
     transition: 0.4s;
 }
 
+
+.checked .bar1 ,.checked .bar2 ,.checked .bar3{
+  background-color: white;
+
+}
 /* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
@@ -88,6 +101,16 @@ h1 {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* menu item style */
+nav a { 
+  display: block; 
+  padding: 15px 8%;
+  font-family: Montserrat;
+  font-size: 34px;
+  color: #ffffff;
+  text-decoration: none;
 }
 /* Hamburger Menu End*/
 
@@ -192,7 +215,23 @@ footer h5{
   }
 
    /* footer icons*/
+
+#side-nav {
+  width: 60%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background: #000000;
+  right: -60%;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  
 }
+
+#menu-btn.checked+#side-nav { position: absolute; right: 0; }
 
 
 

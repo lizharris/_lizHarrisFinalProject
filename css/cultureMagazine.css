@@ -68,10 +68,13 @@ font-family: 'Roboto', sans-serif;
 }
 /* list of credential info for "Culture Magazine"*/
 .projectCredentials{
-  padding-left:10%;
+  /* padding-left:32%;
   padding-top: 60px;
   padding-bottom: 80px;
-  padding-right: 15%
+  padding-right: 15%*/
+
+ 
+
 
 }
 .projectCredentials div {
@@ -91,7 +94,6 @@ font-family: 'Roboto', sans-serif;
     line-height: 2em;
     font-weight: 300;
     width: 150px;
-
 }
 
 
@@ -99,3 +101,14 @@ font-family: 'Roboto', sans-serif;
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media only screen and (max-width:768px) {
+  .projectCredentials{
+  padding-left:10%;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-right: 0%;
+  float:left;
+
+
+}
