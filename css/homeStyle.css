@@ -41,7 +41,7 @@ font-family: 'Roboto', sans-serif;
 
 /******************************************
 /* BASE STYLES
-/*******************************************/
+/************************************************************/
 
 /* Logo */
 
@@ -106,12 +106,36 @@ h1 {
 /* menu item style */
 nav a { 
   display: block; 
-  padding: 15px 8%;
+  padding: 20px 8%;
   font-family: Montserrat;
   font-size: 34px;
   color: #ffffff;
   text-decoration: none;
 }
+
+nav a:hover { background: 000000; color: #b4eaff; }
+nav ul{
+padding-top: 50px;
+}
+
+
+#side-nav {
+  width: 60%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background: #000000;
+  right: -60%;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  
+}
+
+#menu-btn.checked+#side-nav { position: absolute; right: 0; }
+
 /* Hamburger Menu End*/
 
 
@@ -121,9 +145,6 @@ nav a {
   float: left;
   width: 100%;
 }
-
-
-
 
 
 /* each individual project square*/
@@ -216,49 +237,30 @@ footer h5{
 
    /* footer icons*/
 
-#side-nav {
-  width: 60%;
-  height: 100%;
-  top: 0;
-  position: absolute;
-  background: #000000;
-  right: -60%;
-  transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  
-}
-
-#menu-btn.checked+#side-nav { position: absolute; right: 0; }
-
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 /*Media Query -resize footer for copyright floats*/
-@media only screen and (max-width:782px){
-  .section2{
-    margin:-30px 300px 0 0;
-    padding: ;
-    float:none;
- }
-
-}
-
-/*Media Query -resize to tablet*/
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:1250px){
   .square {
     width: 50vw;
     height: 50vw;
   }
-
-  .square img{
+    .square img{
     width: 50vw;
     height: 50vw;
   }
+
+
+/*Media Query -resize to tablet*/
+@media only screen and (max-width:782px){
+    .section2{
+    margin:-30px 300px 0 0;
+    padding: ;
+    float:none;
+ }
     .section2{
     margin:-30px 300px 0 0;
     padding: ;
@@ -267,17 +269,18 @@ footer h5{
 
 }
 
-/*Media Query -resize to mobile*/
-@media only screen and (max-width:500px){
-   .square {
-    width: 100vw;
-    height: 100vw;
+/*Media Query -resize to mobile/////////////////////////////////////*/
+
+@media only screen and (max-width:700px){
+    .square {
+      width: 100vw;
+      height: 100vw;
   }
     .square img{
-    width: 100vw;
-    height: 100vw;
+      width: 100vw;
+      height: 100vw;
   }
-
+@media only screen and (max-width:500px){
   .arrow {
     display:none;
   }
@@ -285,22 +288,27 @@ footer h5{
 /*Media Query -resize to mobile*/
 @media only screen and (max-width:414px) {
 
-/*put menu items up here -*/
+#side-nav {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+}
+#menu-btn {
+  z-index: 100;
+  position: absolute;
+  top: 1.5%;
+  right: 1%;
+}
+
+#menu-btn.checked+#side-nav { position: absolute; right: 0; }
+
 
 h1 {
 
-  padding: 5% 0 1% 3%;
+  padding: 8% 0 8% 3%;
   
 }
-  .square {
-    width: 100vw;
-    height: 100vw;
-  }
-.
-  .square img{
-    width: 100vw;
-    height: 100vw;
-  }
 
   .hvr-fade{
   display: inline-block;
@@ -321,9 +329,6 @@ h1 {
 }
 
 /*footer START -*/
-  .arrow {
-    display:none;
-  }
 
   footer section h4 {
     text-align: center;
