@@ -65,7 +65,13 @@ h1 {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 110;
+}
+
+#menu-btn.checked {
+  position: fixed;
+
+
 }
 
 .container {
@@ -104,6 +110,10 @@ h1 {
 }
 
 /* menu item style */
+
+body{
+  overflow-x: hidden;
+}
 nav a { 
   display: block; 
   padding: 20px 8%;
@@ -123,9 +133,10 @@ padding-top: 50px;
   width: 60%;
   height: 100%;
   top: 0;
-  position: absolute;
+  position: fixed;
   background: #000000;
   right: -60%;
+  z-index:100;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -134,7 +145,7 @@ padding-top: 50px;
   
 }
 
-#menu-btn.checked+#side-nav { position: absolute; right: 0; }
+#menu-btn.checked+#side-nav { position: fixed; right: 0; }
 
 /* Hamburger Menu End*/
 
@@ -155,32 +166,377 @@ padding-top: 50px;
   box-sizing:border-box;
   width: 33.33vw;
   height: 33.33vw;
+  background: none;
 
 }
 
-
 .square a {
-    display: none;
+ 
    /* hides titles of projects*/
  }
-
 
 
 .square img {
     width: 33.33vw;
     height: 33.33vw;
+    transition:opacity 0.3s ease-in-out;
   /* keeps images inside square*/
 }
+
+/************** HOVERS*********************
+*******************************************/
+
+  /* hover over Culture Magazine********************************/
+.cultureMag{
+  background: #b4eaff;
+  position: relative;
+
+}
+
+.cultureMag a{
+  position: absolute;
+  width: 100%;
+  top: 110px;
+  left: 35px;
+  z-index: 5;
+  opacity: 0;
+  transition:opacity 0.2s ease-in-out;
+  color: black;
+  text-decoration: none; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+}
+
+.cultureMag p{
+  font-size: 18px;
+  width: 100%;
+  top: 110px;
+  left: 35px;
+  font-weight:400;
+}
+
+.cultureMag .style1 {
+  width: 50px;
+  height: 5px;
+  background-color: #000000;
+  margin: 35px 10px 70px 0;
+
+   /*margin: 70px 0 50px 75px ;*/
+}
+
+.cultureMag:hover img{
+    opacity: 0;
+  }
+
+.cultureMag:hover a{
+    opacity: 1;
+    color: black;
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    }
+
+.cultureMag:hover p{
+    font-size:18px;
+
+  }
+
+
+/************************** HOVER OVER XIVELY*************************************/
+.xively{
+ background-color:#e33e29;
+;
+  position: relative;
+
+}
+
+.xively a{
+  position: absolute;
+  width: 100%;
+  top: 110px;
+  left: 35px;
+  z-index: 5;
+  opacity: 0;
+  transition:opacity 0.2s ease-in-out;
+  color: black;
+  text-decoration: none; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+}
+
+.xively p{
+  font-size: 18px;
+  width: 100%;
+  top: 110px;
+  left: 35px;
+  font-weight:400;
+}
+
+.xively .style1 {
+  width: 50px;
+  height: 5px;
+  background-color: #000000;
+  margin: 35px 10px 70px 0;
+
+   /*margin: 70px 0 50px 75px ;*/
+}
+
+.xively:hover img{
+    opacity: 0;
+  }
+.xively:hover a{
+    opacity: 1;
+    color: black;
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    }
+
+.xively:hover p{
+    font-size:18px;
+
+  }
+
+/* HOVER OVER GRASSHOPPER***********************************/
+  .grasshopper{
+   background-color:#3aa72e;
+  ;
+    position: relative;
+
+  }
+
+  .grasshopper a{
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    left: 35px;
+    z-index: 5;
+    opacity: 0;
+    transition:opacity 0.2s ease-in-out;
+    color: black;
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+  }
+
+  .grasshopper p{
+    font-size: 18px;
+    width: 100%;
+    top: 110px;
+    left: 35px;
+    font-weight:400;
+  }
+
+  .grasshopper .style1 {
+    width: 50px;
+    height: 5px;
+    background-color: #000000;
+    margin: 35px 10px 70px 0;
+
+     /*margin: 70px 0 50px 75px ;*/
+  }
+
+  .grasshopper:hover img{
+      opacity: 0;
+    }
+  .grasshopper:hover a{
+      opacity: 1;
+      color: black;
+      text-decoration: none; 
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
+      }
+
+  .grasshopper:hover p{
+      font-size:18px;
+
+  }
+
+
+/* HOVER OVER CAREME********************************************/
+  .careMe{
+   background-color:#ef9100;
+  ;
+    position: relative;
+
+  }
+
+ .careMe a{
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    left: 35px;
+    z-index: 5;
+    opacity: 0;
+    transition:opacity 0.2s ease-in-out;
+    color: black;
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+  }
+
+   .careMe p{
+    font-size: 18px;
+    width: 100%;
+    top: 110px;
+    left: 35px;
+    font-weight:400;
+  }
+
+   .careMe .style1 {
+    width: 50px;
+    height: 5px;
+    background-color: #000000;
+    margin: 35px 10px 70px 0;
+
+     /*margin: 70px 0 50px 75px ;*/
+  }
+
+   .careMe:hover img{
+      opacity: 0;
+    }
+   .careMe:hover a{
+      opacity: 1;
+      color: black;
+      text-decoration: none; 
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
+      }
+
+   .careMe:hover p{
+      font-size:18px;
+
+  }
+/* HOVER OVER ANNUAL REPORT********************************************/
+  .annualReport{
+   background-color:#f2e39c;
+  ;
+    position: relative;
+
+  }
+
+  .annualReport a{
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    left: 35px;
+    z-index: 5;
+    opacity: 0;
+    transition:opacity 0.2s ease-in-out;
+    color: black;
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+  }
+
+   .annualReport p{
+    font-size: 18px;
+    width: 100%;
+    top: 110px;
+    left: 35px;
+    font-weight:400;
+  }
+
+   .annualReport .style1 {
+    width: 50px;
+    height: 5px;
+    background-color: #000000;
+    margin: 35px 10px 70px 0;
+
+     /*margin: 70px 0 50px 75px ;*/
+  }
+
+   .annualReport:hover img{
+      opacity: 0;
+    }
+   .annualReport:hover a{
+      opacity: 1;
+      color: black;
+      text-decoration: none; 
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
+      }
+
+   .annualReport:hover p{
+      font-size:18px;
+
+  } 
+
+/* HOVER OVER DATA AS JOURNALISM********************************************/
+  .dataAsJournalism{
+   background-color:#c0c4ce;
+  ;
+    position: relative;
+
+  }
+
+  .dataAsJournalism a{
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    left: 35px;
+    z-index: 5;
+    opacity: 0;
+    transition:opacity 0.2s ease-in-out;
+    color: black;
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+  }
+
+   .dataAsJournalism p{
+    font-size: 18px;
+    width: 100%;
+    top: 110px;
+    left: 35px;
+    font-weight:400;
+  }
+
+   .dataAsJournalism .style1 {
+    width: 50px;
+    height: 5px;
+    background-color: #000000;
+    margin: 35px 10px 70px 0;
+
+     /*margin: 70px 0 50px 75px ;*/
+  }
+
+   .dataAsJournalism:hover img{
+      opacity: 0;
+    }
+   .dataAsJournalism:hover a{
+      opacity: 1;
+      color: black;
+      text-decoration: none; 
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
+      }
+
+   .dataAsJournalism:hover p{
+      font-size:18px;
+
+  }  
+
+/************** HOVERS - END *********************
+*******************************************/   
+
+
+img:hover { background: 000000; color: #b4eaff; }
 
 /**
  * Footer Styles
  */
 
+footer{
+   clear:both;
+   z-index: 50;
+}
 .footer{ 
   clear: both; 
   width:100%; 
   background: black;
   height: 300px;
+
    /* footer container*/
 
 }
@@ -280,81 +636,99 @@ footer h5{
       width: 100vw;
       height: 100vw;
   }
+  h1 {
+
+    padding: 4% 0 3% 3%;
+}
+
 @media only screen and (max-width:500px){
   .arrow {
     display:none;
   }
+
+  #side-nav {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+  }
+  #menu-btn {
+    z-index: 100;
+    position: absolute;
+    top: 1.5%;
+    right: 1%;
+  }
+   h1 {
+
+    padding: 8% 0 8% 3%;
+
 }
 /*Media Query -resize to mobile*/
 @media only screen and (max-width:414px) {
 
-#side-nav {
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  right: -100%;
-}
-#menu-btn {
-  z-index: 100;
-  position: absolute;
-  top: 1.5%;
-  right: 1%;
-}
-
-#menu-btn.checked+#side-nav { position: absolute; right: 0; }
-
-
-h1 {
-
-  padding: 8% 0 8% 3%;
-  
-}
-
-  .hvr-fade{
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
+  #side-nav {
+   
   }
-  
-  .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #2098D1;
-  color: white;
-}
-
-/*footer START -*/
-
-  footer section h4 {
-    text-align: center;
-
-  }
-  footer section h5{
-     text-align: center;
-     width: 197px;
-     height: 48px;
-     line-height: 1.33;
+  #menu-btn {
+    z-index: 100;
+    position: absolute;
+    top: 1.5%;
+    right: 1%;
   }
 
-  .footer{ 
-  height: 300px;
-}
-  .section2{
+  #menu-btn.checked+#side-nav { position: absolute; right: 0; }
+
+
+  h1 {
+
+    padding: 8% 0 8% 3%;
+    
+  }
+    .hvr-fade{
     display: inline-block;
-    padding: 0 3%;
-    margin:0 22%;
- }
-
-}
-  .social {
-  margin: 0 0px;
-  text-align: center;
-  padding:5 5.6%;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    }
+    
+    .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: #2098D1;
+    color: white;
   }
 
-}
+  /************footer START -***************/
+
+    footer section h4 {
+      text-align: center;
+
+    }
+    footer section h5{
+       text-align: center;
+       width: 197px;
+       height: 48px;
+       line-height: 1.33;
+    }
+
+    .footer{ 
+    height: 300px;
+  }
+    .section2{
+      display: inline-block;
+      padding: 0 3%;
+      margin:0 22%;
+   }
+
+  }
+    .social {
+    margin: 0 0px;
+    text-align: center;
+    padding:5 5.6%;
+    }
+
+  }
