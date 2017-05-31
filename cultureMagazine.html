@@ -8,7 +8,7 @@
 
 	<!-- <External CSS links> -->
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/homeStyle.css">
+	<link rel="stylesheet" href="css/headerFooterStyles.css">
 	<link rel="stylesheet" href="css/cultureMagazine.css">
 
 </head>
@@ -18,13 +18,19 @@
 <header id="topNav">
 	<h1> Liz Harris</h1>
 
-	<div class="menu" onclick="myFunction(this)">
+	<div id="menu-btn" class="menu" onclick="myFunction(this)">
   		<div class="bar1"></div>
   		<div class="bar2"></div>
   		<div class="bar3"></div>
-      <link href="css/hover.css" rel="stylesheet" media="all">
-	</div>
-</header>
+  </div>
+
+  <nav id="side-nav">
+    <ul>
+      <li><a href="file:///Users/eharris/Dropbox%20(Personal)/GA%20Front%20End%20Web%20Dev/_Final-project/_lizHarrisFinalProject/home.html">Work</a></li>
+        <li><a href="file:///Users/eharris/Dropbox%20(Personal)/GA%20Front%20End%20Web%20Dev/_Final-project/_lizHarrisFinalProject/aboutme.html">About Me</a></li>
+        <li><a href="#">Say Hi!</a></li>
+    </ul>
+</nav>
 
 <!-- project content start - title + info-->
 
@@ -75,5 +81,5 @@
 </footer>
 </body>
 <script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/home.js"></script>
+	<script src="js/main.js"></script>
 </html>

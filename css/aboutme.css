@@ -43,21 +43,7 @@ font-family: 'Roboto', sans-serif;
 /* BASE STYLES
 /*******************************************/
 
-/* Logo */
-
-h1 {
-
-  float:left;
-  padding: 3%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  color:  #000000;
-  cursor: pointer;
-}
-
-
-/* Hamburger Menu */
-
+/* Hamburger Menu Start*/
 
 /* Logo */
 
@@ -449,6 +435,41 @@ footer h5{
 
 /*put menu items up here -*/
 
+  h1 {
+
+    padding: 8% 0 8% 3%;
+    
+  }
+
+  #side-nav {
+   
+  }
+  #menu-btn {
+    z-index: 100;
+    position: absolute;
+    top: 1.5%;
+    right: 1%;
+  }
+
+  #menu-btn.checked+#side-nav { position: absolute; right: 0; }
+
+    .hvr-fade{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    }
+    
+    .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: #2098D1;
+    color: white;
+  }
 
   .arrow {
     display:none;
@@ -481,41 +502,6 @@ footer h5{
   padding:5 5.6%;
   }
 
-  #side-nav {
-   
-  }
-  #menu-btn {
-    z-index: 100;
-    position: absolute;
-    top: 1.5%;
-    right: 1%;
-  }
-
-  #menu-btn.checked+#side-nav { position: absolute; right: 0; }
-
-
-  h1 {
-
-    padding: 8% 0 8% 3%;
-    
-  }
-    .hvr-fade{
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    overflow: hidden;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: color, background-color;
-    transition-property: color, background-color;
-    }
-    
-    .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-    background-color: #2098D1;
-    color: white;
-  }
 
 
 }

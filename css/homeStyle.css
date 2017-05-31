@@ -46,17 +46,17 @@ font-family: 'Roboto', sans-serif;
 /* Logo */
 
 h1 {
-	float:left;
-	padding: 3%;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 22px;
-	color: #333;
+  float:left;
+  padding: 3%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #333;
   cursor: pointer;
 }
 
 /* Hamburger Menu */
 .menu { float:right;
-	padding: 3%;
+  padding: 3%;
   cursor: pointer;
 }
 
@@ -147,7 +147,9 @@ padding-top: 50px;
 
 #menu-btn.checked+#side-nav { position: fixed; right: 0; }
 
+
 /* Hamburger Menu End*/
+/*******************************************/
 
 
 
