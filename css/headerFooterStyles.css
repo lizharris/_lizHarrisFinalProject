@@ -58,6 +58,11 @@ h1 {
   cursor: pointer;
 }
 
+h1 a{
+  text-decoration: none;
+  color: #000000;
+}
+
 /* Hamburger Menu */
 .menu { float:right;
   padding: 3%;
